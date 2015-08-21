@@ -132,6 +132,7 @@
     <Compile Include="Models\PatientFiles\PatientMedicalAid.cs" />
     <Compile Include="Models\PatientFiles\PatientNextOfKin.cs" />
     <Compile Include="Models\PatientFiles\PatientQuestionaire.cs" />
+    <Compile Include="Models\PatientFiles\PatientRelations.cs" />
     <Compile Include="Models\_Enums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

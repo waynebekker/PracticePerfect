@@ -27,7 +27,11 @@ namespace PracticePerfect.Models
 
     public enum Relationship
     {
-        Spouse, Family, Friend, Dependant, Account
+        Spouse, Family, Friend,
+        [Display(Name = "Responsible for account")]
+        Account,
+        [Display(Name = "Next of kin")]
+        NextOfKin
     }
 
     public enum MaritalStatus
