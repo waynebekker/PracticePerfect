@@ -13,6 +13,7 @@ namespace PracticePerfect.DAL
         }
 
         public DbSet<Patient> Patients { get; set; }
+        public DbSet<PatientEmployer> PatientEmployers { get; set; }
         public DbSet<Consultation> Consultations { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

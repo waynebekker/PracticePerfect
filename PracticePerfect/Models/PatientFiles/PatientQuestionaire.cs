@@ -11,6 +11,8 @@ namespace PracticePerfect.Models
 
         public int ID { get; set; }
         public int PatientID { get; set; }
+        [Display(Name = "Date Completed YYYY/MM/DD")]
+        public DateTime QuestionsCompletedDate { get; set; }
 
         [Display(Name = "Within the last year, have you been under a physician’s care?")]
         public bool PhysiciansCare { get; set; }
