@@ -21,7 +21,7 @@ namespace PracticePerfect.Migrations
             var patients = new List<Patient>
             {
                 new Patient{FileNumber="BEKW0001", Title=Title.Mr, FirstName="Wayne", Surname="Bekker", IdNumber="7005225214081", BirthDate=DateTime.Parse("1970-05-22"), CellNumber="0846123754"},
-                new Patient{FileNumber="ARNJ0001", Title=Title.Miss, FirstName="Jennifer", Surname="Arlold", IdNumber="7812150000000", BirthDate=DateTime.Parse("1978-12-15")},
+                new Patient{FileNumber="ARNJ0001", Title=Title.Miss, FirstName="Jennifer", Surname="Arlold", IdNumber="7812150000000", BirthDate=DateTime.Parse("1978-12-15"), CellNumber="0614924903"},
                 new Patient{FileNumber="ALOM0001", Title=Title.Miss, FirstName="Meredith", Surname="Alonso", IdNumber="", BirthDate=DateTime.Parse("1999-09-01")},
                 new Patient{FileNumber="ANA0001", Title=Title.Dr, FirstName="Arturo", Surname="Anand", IdNumber="", BirthDate=DateTime.Parse("1958-09-01")},
                 new Patient{FileNumber="BARG0001", Title=Title.Prof, FirstName="Gytis", Surname="Barzdukas", IdNumber="", BirthDate=DateTime.Parse("1968-10-21")},
