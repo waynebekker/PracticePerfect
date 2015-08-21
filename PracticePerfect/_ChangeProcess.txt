@@ -1,0 +1,23 @@
+﻿
+Create the model.cs
+
+Make changes to Migrations\Configuration.cs for seed data
+
+In package manager
+add-migration migrationname
+update-database
+
+In controllers
+Add a new scaffold item
+Use MVC5 controller with views... entitty etc
+Name the controller and specify the correct model class
+
+In the new controller, remove the bindings for ID columns and others that should not be updatable from the webform. 
+this is usually in the add and edit methods. leave the ID in the edit method for updates
+
+Modify the new index view to show wanted fields
+
+Add error handling in the controller add, edit (post) and delete (post) methods
+
+
+
