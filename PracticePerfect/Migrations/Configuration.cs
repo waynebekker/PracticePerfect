@@ -30,7 +30,6 @@ namespace PracticePerfect.Migrations
                 new Patient{FileNumber="NORL0001", Title=Title.Miss, FirstName="Laura", Surname="Norman", IdNumber="", BirthDate=DateTime.Parse("1989-01-28")},
                 new Patient{FileNumber="OLIN0001", Title=Title.Hon, FirstName="Nino", Surname="Olivetto", IdNumber="", BirthDate=DateTime.Parse("1993-06-01")}
             };
-
             patients.ForEach(p => context.Patients.Add(p));
             context.SaveChanges();
 
@@ -39,8 +38,17 @@ namespace PracticePerfect.Migrations
                 new PatientEmployer{PatientID=1, Companyname="Cellsure", EmploymentDate=DateTime.Parse("2000-06-01"), ContactNumber="0118442810", JobTitle="IT Manager"},
                 new PatientEmployer{PatientID=1, Companyname="Ibis Tech", EmploymentDate=DateTime.Parse("2011-02-01"), ContactNumber="011393492", JobTitle="Business Relationship Manager"}
             };
-
             employers.ForEach(e => context.PatientEmployers.Add(e));
+            context.SaveChanges();
+
+            var patientrelations = new List<PatientRelation>
+            {
+                new PatientRelation{PatientID=1, Relationship=Relationship.Spouse, Name="Jenny Bekker", Address="49 Byron rd, lombardy", ContactNumber="0614924903"},
+                new PatientRelation{PatientID=1, Relationship=Relationship.Family, Name="Emma van no church", Address="49 Byron rd, lombardy", ContactNumber="0820834998"},
+                new PatientRelation{PatientID=2, Relationship=Relationship.Friend, Name="Oupa", Address="iz me", ContactNumber="084....."},
+                new PatientRelation{PatientID=2, Relationship=Relationship.Family, Name="Mommy dearest", Address="yeah i drove there", ContactNumber="00000000"}
+            };
+            patientrelations.ForEach(pr => context.PatientRelations.Add(pr));
             context.SaveChanges();
 
             var consultations = new List<Consultation>
@@ -49,7 +57,6 @@ namespace PracticePerfect.Migrations
                 new Consultation{PatientID=1, ConsultationDate=DateTime.Parse("2015-07-01"), Paid=false, Fees=300},
                 new Consultation{PatientID=2, ConsultationDate=DateTime.Parse("2015-07-01"), Paid=true, Fees=100}
             };
-
             consultations.ForEach(c => context.Consultations.Add(c));
             context.SaveChanges();
 

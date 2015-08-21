@@ -6,7 +6,7 @@ using System.Web;
 
 namespace PracticePerfect.Models
 {
-    public class PatientRelations
+    public class PatientRelation
     {
         public int ID { get; set; }
         public int PatientID { get; set; }

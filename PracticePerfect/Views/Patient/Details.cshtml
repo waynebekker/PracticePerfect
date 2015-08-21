@@ -129,6 +129,36 @@
             @Html.DisplayFor(model => model.CurrentBalance)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientRelations)
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Relationship</th>
+                    <th>Name</th>
+                    <th>Contact Number</th>
+                    <th>Address</th>
+                </tr>
+                @foreach (var item in Model.PatientRelations)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Relationship)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ContactNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
     </dl>
 </div>
 <p>

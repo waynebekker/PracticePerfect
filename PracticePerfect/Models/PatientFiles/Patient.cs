@@ -62,7 +62,7 @@ namespace PracticePerfect.Models
 
         //Linked stuff
         //Details
-        public virtual ICollection<PatientNextOfKin> NextOfKin { get; set; }
+        public virtual ICollection<PatientRelation> PatientRelations { get; set; }
         public virtual ICollection<PatientEmployer> Employers { get; set; }
         public virtual ICollection<PatientMedicalAid> MedicalAids { get; set; }
 
