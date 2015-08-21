@@ -34,4 +34,21 @@ namespace PracticePerfect.Models
     {
         Single, Married, Seperated, Divorced, Other
     }
+
+    public enum StressLevel
+    {
+        Low, Medium, High,
+        [Display(Name = "Very High")]
+        VeryHigh
+    }
+
+    public enum MassagePressure
+    {
+        Light, Medium, Firm
+    }
+
+    public enum LowMedHigh
+    {
+        Low, Medium, High
+    }
 }
